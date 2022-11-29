@@ -1,7 +1,9 @@
+import PictureCircle from "../../components/PictureCircle";
+
 function App() {
   return (
     <div className="App">
-      hello
+      <PictureCircle/>
     </div>
   );
 }
