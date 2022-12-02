@@ -1,7 +1,15 @@
-const PictureCircle = () => {
+import { Image, ImageWrapper } from "./styles"
+
+interface Props {
+  imageUrl: string
+}
+
+const PictureCircle = ({imageUrl}: Props) => {
   return (
     <>
-      <p>hello from picture circle!</p>
+      <ImageWrapper>
+        <Image src={imageUrl} alt="user profile" width="60" height="60" />
+      </ImageWrapper>
     </>
   )
 }
