@@ -1,15 +1,19 @@
-import { Image, ImageWrapper } from "./styles"
+import { Button, Image, ImageWrapper } from "./styles"
 
 interface Props {
+  name: string
   imageUrl: string
+  seen: boolean
 }
 
-const PictureCircle = ({imageUrl}: Props) => {
+const PictureCircle = ({name, imageUrl, seen}: Props) => {
   return (
     <>
-      <ImageWrapper>
-        <Image src={imageUrl} alt="user profile" width="60" height="60" />
-      </ImageWrapper>
+      <Button aria-label={`Story by ${name}, ${seen ? 'seen' : 'not seen'}`} role='menuitem'>
+        <ImageWrapper aria-disabled={true}>
+          <Image src={imageUrl} alt="user profile" width="60" height="60" />
+        </ImageWrapper>
+      </Button>
     </>
   )
 }

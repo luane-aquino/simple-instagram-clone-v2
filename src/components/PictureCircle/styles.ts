@@ -1,5 +1,17 @@
 import styled from 'styled-components'
 
+export const Button = styled.button`
+  width: 68px;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+`
+
 export const ImageWrapper = styled.div`
   width: 66px;
   height: 66px;
