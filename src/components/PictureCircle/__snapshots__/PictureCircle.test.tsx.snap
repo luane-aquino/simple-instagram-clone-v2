@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PictureCircle should render the component correctly 1`] = `
+<DocumentFragment>
+  <button
+    aria-label="Story by nass, not seen"
+    class="sc-bcXHqe crZyFK"
+  >
+    <div
+      class="sc-gswNZR lnzYsQ"
+    >
+      <img
+        alt="user profile"
+        aria-disabled="true"
+        class="sc-dkrFOg dHLDCZ"
+        height="60"
+        src=""
+        width="60"
+      />
+    </div>
+  </button>
+</DocumentFragment>
+`;
