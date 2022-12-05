@@ -9,9 +9,9 @@ interface Props {
 const PictureCircle = ({name, imageUrl, seen}: Props) => {
   return (
     <>
-      <Button aria-label={`Story by ${name}, ${seen ? 'seen' : 'not seen'}`} role='menuitem'>
-        <ImageWrapper aria-disabled={true}>
-          <Image src={imageUrl} alt="user profile" width="60" height="60" />
+      <Button aria-label={`Story by ${name}, ${seen ? 'seen' : 'not seen'}`}>
+        <ImageWrapper>
+          <Image aria-disabled={true} src={imageUrl} alt="user profile" width="60" height="60" />
         </ImageWrapper>
       </Button>
     </>
