@@ -6,7 +6,7 @@ interface Props {
   seen: boolean
 }
 
-const PictureCircle = ({name, imageUrl, seen}: Props) => {
+const UserImage = ({name, imageUrl, seen}: Props) => {
   return (
     <>
       <Button aria-label={`Story by ${name}, ${seen ? 'seen' : 'not seen'}`}>
@@ -18,4 +18,4 @@ const PictureCircle = ({name, imageUrl, seen}: Props) => {
   )
 }
 
-export default PictureCircle
+export default UserImage

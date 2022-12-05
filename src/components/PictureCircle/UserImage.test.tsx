@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
-import PictureCircle from './index';
+import UserImage from './index';
 
-describe('PictureCircle', () => {
+describe('UserImage', () => {
   test('should render the component correctly', () => {
-    const {asFragment} = render(<PictureCircle imageUrl='' name='nass' seen={false} />)
+    const {asFragment} = render(<UserImage imageUrl='' name='nass' seen={false} />)
     expect(asFragment()).toMatchSnapshot()
     const button = screen.getByRole('button', {name: 'Story by nass, not seen'})
     expect(button).toBeVisible()

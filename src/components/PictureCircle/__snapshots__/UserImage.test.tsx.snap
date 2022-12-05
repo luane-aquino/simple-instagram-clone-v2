@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PictureCircle should render the component correctly 1`] = `
+exports[`UserImage should render the component correctly 1`] = `
 <DocumentFragment>
   <button
     aria-label="Story by nass, not seen"
